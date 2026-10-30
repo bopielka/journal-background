@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <LocalizedText>
+        <Row Tag="LOC_MOD_JOURNAL_BACKGROUND_NAME" Language="pl_PL">
+            <Text>Better Journal UI by Najane</Text>
+        </Row>
+        <Row Tag="LOC_MOD_JOURNAL_BACKGROUND_DESCRIPTION" Language="pl_PL">
+            <Text>Dodaje półprzezroczyste tło za Dziennikiem po lewej stronie ekranu, żeby jego tekst był czytelny na tle mapy. Krycie ustawisz w Opcje - Mody. Tylko interfejs - nie zmienia żadnych zasad gry.</Text>
+        </Row>
+    </LocalizedText>
+</Database>

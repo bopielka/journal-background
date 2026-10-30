@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <EnglishText>
+        <Row Tag="LOC_MOD_JOURNAL_BACKGROUND_NAME">
+            <Text>Better Journal UI by Najane</Text>
+        </Row>
+        <Row Tag="LOC_MOD_JOURNAL_BACKGROUND_DESCRIPTION">
+            <Text>Adds a semi-transparent background behind the Journal on the left of the screen, so its text stays readable over the map. The opacity can be set in Options - Mods. UI only - no game rules are changed.</Text>
+        </Row>
+    </EnglishText>
+</Database>

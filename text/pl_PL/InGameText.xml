@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ⚠️ <LocalizedText> with Language="pl_PL", never <EnglishText> - a row without the attribute
+    validates and never displays.
+-->
+<Database>
+    <LocalizedText>
+        <Row Tag="LOC_OPTIONS_GROUP_NAJANE_MODS_JOURNAL" Language="pl_PL">
+            <Text>Najane Mods: dziennik</Text>
+        </Row>
+        <Row Tag="LOC_OPTIONS_JOURNAL_BACKGROUND_OPACITY" Language="pl_PL">
+            <Text>Krycie tła dziennika</Text>
+        </Row>
+        <Row Tag="LOC_OPTIONS_JOURNAL_BACKGROUND_OPACITY_DESCRIPTION" Language="pl_PL">
+            <Text>Jak bardzo nieprzezroczyste jest tło za Dziennikiem po lewej stronie ekranu. 0 wyłącza tło.</Text>
+        </Row>
+        <Row Tag="LOC_OPTIONS_JOURNAL_BACKGROUND_SOLID" Language="pl_PL">
+            <Text>Jednolite tło</Text>
+        </Row>
+        <Row Tag="LOC_OPTIONS_JOURNAL_BACKGROUND_SOLID_DESCRIPTION" Language="pl_PL">
+            <Text>Jednolite, ciemnogranatowe tło za Dziennikiem zamiast gradientu, który gra pokazuje pod wskazanym wpisem.</Text>
+        </Row>
+    </LocalizedText>
+</Database>

@@ -1,0 +1,56 @@
+.quest-item-container {
+  max-height: 33.3333333333rem;
+  transition: opacity ease-in-out 0.25s, transform ease-in-out 0.25s;
+}
+@media (experience: mobile) and (max-height: 55.5555555556rem) {
+  .quest-item-container fxs-scrollable {
+    max-height: 13.8888888889rem;
+  }
+}
+
+@media (max-height: 55.5555555556rem) {
+  .quest-item-container {
+    max-height: 13.8888888889rem;
+  }
+}
+.quest-list-item-selectable {
+  padding: 0.4444444444rem;
+}
+.quest-list-item-selectable:hover, .quest-list-item-selectable:focus, .quest-list-item-selectable.pressed {
+  border-image-source: url("fs://game/hud_list-focus_frame.png");
+  border-image-slice: 28 32 28 32;
+  border-image-width: 1.5555555556rem 1.7777777778rem;
+  border-image-outset: 0.3333333333rem 0.2777777778rem;
+  background: linear-gradient(90deg, #4c473d 0%, rgba(5, 7, 13, 0.5) 100%);
+}
+
+.filligree-quest-divider {
+  min-height: 0.8888888889rem;
+  min-width: 14.2222222222rem;
+  background-image: url("fs://game/hud_quest_div.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (experience: mobile) {
+  quest-list {
+    margin-top: 0.2222222222rem;
+  }
+}
+
+@media (experience: mobile) {
+  .quest-list__expand-container {
+    margin-right: 1.3333333333rem;
+  }
+}
+
+quest-item p {
+  margin: 0;
+}
+
+.quest-item-bullet {
+  width: 1.5em;
+  height: 1.5em;
+  margin-top: 0.1em;
+  flex: 0 0 auto;
+}

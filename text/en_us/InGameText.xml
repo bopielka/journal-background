@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <EnglishText>
+        <Row Tag="LOC_OPTIONS_GROUP_NAJANE_MODS_JOURNAL">
+            <Text>Najane Mods: journal</Text>
+        </Row>
+        <Row Tag="LOC_OPTIONS_JOURNAL_BACKGROUND_OPACITY">
+            <Text>Journal background opacity</Text>
+        </Row>
+        <Row Tag="LOC_OPTIONS_JOURNAL_BACKGROUND_OPACITY_DESCRIPTION">
+            <Text>How opaque the background behind the Journal on the left of the screen is. 0 turns the background off.</Text>
+        </Row>
+        <Row Tag="LOC_OPTIONS_JOURNAL_BACKGROUND_SOLID">
+            <Text>Solid background</Text>
+        </Row>
+        <Row Tag="LOC_OPTIONS_JOURNAL_BACKGROUND_SOLID_DESCRIPTION">
+            <Text>Use a solid dark navy background behind the Journal instead of the gradient shown on a hovered entry.</Text>
+        </Row>
+    </EnglishText>
+</Database>

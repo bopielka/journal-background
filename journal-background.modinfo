@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    version on <Mod> must be an integer >= 1: it is parsed as an int, and version="0.1" lands as 0,
+    which the game silently refuses to apply. The human-readable version is <Properties><Version>.
+-->
+<Mod id="journal-background" version="1"
+    xmlns="ModInfo">
+    <Properties>
+        <Name>LOC_MOD_JOURNAL_BACKGROUND_NAME</Name>
+        <Version>1.0</Version>
+        <Description>LOC_MOD_JOURNAL_BACKGROUND_DESCRIPTION</Description>
+        <Authors>Najane</Authors>
+        <Package>Mod</Package>
+        <AffectsSavedGames>0</AffectsSavedGames>
+        <ShowInBrowser>1</ShowInBrowser>
+    </Properties>
+    <Dependencies>
+        <Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />
+    </Dependencies>
+    <ActionCriteria>
+        <Criteria id="always">
+            <AlwaysMet></AlwaysMet>
+        </Criteria>
+    </ActionCriteria>
+    <ActionGroups>
+        <ActionGroup id="journal-background-game" scope="game" criteria="always">
+            <Properties>
+                <LoadOrder>1000</LoadOrder>
+            </Properties>
+            <Actions>
+                <UpdateText>
+                    <Item>text/en_us/InGameText.xml</Item>
+                    <Item locale="pl_PL">text/pl_PL/InGameText.xml</Item>
+                </UpdateText>
+                <!--
+                    The journal's frame and fills - served as fs://game/journal-background/texture/…,
+                    which only resolves for files registered here.
+                -->
+                <ImportFiles>
+                    <Item>texture/journal-frame.png</Item>
+                    <Item>texture/journal-fill-gradient.png</Item>
+                    <Item>texture/journal-fill-navy.png</Item>
+                </ImportFiles>
+                <UIScripts>
+                    <Item>ui/options/journal-background-options.js</Item>
+                    <Item>ui/journal-background.js</Item>
+                    <Item>ui/journal-hide-empty.js</Item>
+                </UIScripts>
+            </Actions>
+        </ActionGroup>
+        <!--
+            The options screen exists in the main menu as well, so the options module is
+            registered in both scopes or the slider disappears from one of them. The style
+            itself belongs in game only: there is no journal in the shell.
+        -->
+        <ActionGroup id="journal-background-shell" scope="shell" criteria="always">
+            <Properties>
+                <LoadOrder>1000</LoadOrder>
+            </Properties>
+            <Actions>
+                <UpdateText>
+                    <Item>text/en_us/InGameText.xml</Item>
+                    <Item locale="pl_PL">text/pl_PL/InGameText.xml</Item>
+                </UpdateText>
+                <UIScripts>
+                    <Item>ui/options/journal-background-options.js</Item>
+                </UIScripts>
+            </Actions>
+        </ActionGroup>
+    </ActionGroups>
+    <LocalizedText>
+        <File>text/en_us/ModInfoText.xml</File>
+        <File>text/pl_PL/ModInfoText.xml</File>
+    </LocalizedText>
+</Mod>
