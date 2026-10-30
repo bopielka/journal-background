@@ -62,6 +62,11 @@ const TOP_PULL = "0.1666666667rem";
  * container stayed at 275 px while its fxs-scrollable ran 24 px past the frame's bottom edge - the
  * list is sized from the max-height alone, not from what the padding leaves - so a hovered entry
  * at the bottom was drawn outside the frame. Keep in step with PAD_Y and with quest-list.css.
+ *
+ * ⚠️ THE RAISED MAX-HEIGHT ALONE WAS NOT ENOUGH (2026-10-30): scrolled to the bottom, the last
+ * entry's hover gradient still sometimes hung below the frame. The fxs-scrollable is therefore
+ * also made a shrinking flex child with `min-height: 0` - a flex item's default `min-height: auto`
+ * keeps it at its content's height, so it never shrank to what the title and padding leave.
  */
 const MAX_HEIGHT = "34.6666666667rem";          // 33.3333333333rem + 2 x PAD_Y
 const MAX_HEIGHT_SMALL = "15.2222222222rem";    // 13.8888888889rem + 2 x PAD_Y
@@ -109,6 +114,10 @@ quest-list .quest-item-container {
     quest-list .quest-item-container {
         max-height: ${MAX_HEIGHT_SMALL};
     }
+}
+quest-list .quest-item-container fxs-scrollable {
+    flex: 1 1 auto;
+    min-height: 0;
 }
 quest-list .quest-item-container::before,
 quest-list .quest-item-container::after {

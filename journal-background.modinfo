@@ -3,11 +3,11 @@
     version on <Mod> must be an integer >= 1: it is parsed as an int, and version="0.1" lands as 0,
     which the game silently refuses to apply. The human-readable version is <Properties><Version>.
 -->
-<Mod id="journal-background" version="1"
+<Mod id="journal-background" version="2"
     xmlns="ModInfo">
     <Properties>
         <Name>LOC_MOD_JOURNAL_BACKGROUND_NAME</Name>
-        <Version>1.0</Version>
+        <Version>1.1</Version>
         <Description>LOC_MOD_JOURNAL_BACKGROUND_DESCRIPTION</Description>
         <Authors>Najane</Authors>
         <Package>Mod</Package>
